@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Brian Onang’o">
-<meta name="dcterms.date" content="2023-03-14">
+<meta name="dcterms.date" content="2023-03-30">
 <meta name="keywords" content="Affordable autonomous agricultural vehicles, Smart farming, Walking robots, Compound robots, Compound linear actuator">
 
 <title>Brian Mechanisms - Novel Long Range Compound Linear Motion Mechanisms For use in the Design of Affordable Agricultural Robots</title>
@@ -140,10 +140,11 @@ div.csl-indent {
   <li><a href="#sec-recirculating-legs" id="toc-sec-recirculating-legs" class="nav-link" data-scroll-target="#sec-recirculating-legs">A Recirculating Leg Mechanism using a Parallelogram Linkage</a>
   <ul class="collapse">
   <li><a href="#sec-recirculating-legs-1" id="toc-sec-recirculating-legs-1" class="nav-link" data-scroll-target="#sec-recirculating-legs-1">The First Configuration</a></li>
-  <li><a href="#sec-parallelogram-straight-line-motion" id="toc-sec-parallelogram-straight-line-motion" class="nav-link" data-scroll-target="#sec-parallelogram-straight-line-motion">Parallelgram Straight Line Motion</a></li>
+  <li><a href="#sec-parallelogram-straight-line-motion" id="toc-sec-parallelogram-straight-line-motion" class="nav-link" data-scroll-target="#sec-parallelogram-straight-line-motion">Parallelogram Straight Line Motion</a></li>
   <li><a href="#sec-recirculating-legs-2" id="toc-sec-recirculating-legs-2" class="nav-link" data-scroll-target="#sec-recirculating-legs-2">The Second Configuration</a></li>
   <li><a href="#sec-recirculating-legs-hollow" id="toc-sec-recirculating-legs-hollow" class="nav-link" data-scroll-target="#sec-recirculating-legs-hollow">A Hollow Leg for a Recirculating Leg System</a></li>
   </ul></li>
+  <li><a href="#sec-parallelogram-using-flexible-links" id="toc-sec-parallelogram-using-flexible-links" class="nav-link" data-scroll-target="#sec-parallelogram-using-flexible-links">Parallelogram Mechanism Using Flexible links</a></li>
   <li><a href="#sec-rimless-wheel" id="toc-sec-rimless-wheel" class="nav-link" data-scroll-target="#sec-rimless-wheel">Rimless Wheel with Constant Pressure Angle</a></li>
   <li><a href="#sec-flexible-links" id="toc-sec-flexible-links" class="nav-link" data-scroll-target="#sec-flexible-links">Flexible Links and Cam Grooves</a></li>
   <li><a href="#sec-universal-linear-motion-wheel" id="toc-sec-universal-linear-motion-wheel" class="nav-link" data-scroll-target="#sec-universal-linear-motion-wheel">Universal Linear Motion Wheel</a></li>
@@ -180,7 +181,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 14, 2023</p>
+      <p class="date">March 30, 2023</p>
     </div>
   </div>
   
@@ -190,7 +191,7 @@ div.csl-indent {
 <div>
   <div class="abstract">
     <div class="abstract-title">Abstract</div>
-    <p>In all robotics applications, mechanical complexity is one of the major sources considerably increasing the cost and leading to low adoption. This paper presents the designs of 4 novel compound linear motion mechanisms with essentially unlimited range of motion for use in both fixed and mobile robots. This makes it possible to affordably scale fixed robots to commercial size farms as well as remove the complexity and related costs in mobile agricultural robots introduced by precise sensors for navigation. Three of the given mechanisms meet all the design aims required for successful adoption in agricultural robots. The second mechanism is recommended for further study.</p>
+    <p>In all robotics applications, mechanical complexity is one of the major sources considerably increasing the cost and leading to low adoption. This paper presents the designs of 5 novel compound linear motion mechanisms with essentially unlimited range of motion for use in both fixed and mobile robots. This makes it possible to affordably scale fixed robots to commercial size farms as well as remove the complexity and related costs in mobile agricultural robots introduced by precise sensors for navigation. Three of the given mechanisms meet all the design aims required for successful adoption in agricultural robots. The second mechanism is recommended for further study.</p>
   </div>
 </div>
 
@@ -379,21 +380,21 @@ div.csl-indent {
 <p>Thus design aim 2 is fulfilled. Velocity analysis of this configuration is beyond the scope of this work. By the use of an LLM anchored at point L to drive the legs, constant velocity is obtained. Design aim 1 can also be achieved for example if a single leg is used to drive an axis of the machine. However, different designs will fit different applications, and designing to meet this aim may introduce mechanical complexities which may outdo the gains.</p>
 </section>
 <section id="sec-parallelogram-straight-line-motion" class="level3">
-<h3 class="anchored" data-anchor-id="sec-parallelogram-straight-line-motion">Parallelgram Straight Line Motion</h3>
+<h3 class="anchored" data-anchor-id="sec-parallelogram-straight-line-motion">Parallelogram Straight Line Motion</h3>
 <p>The design of <a href="#fig-Second_Axle_path_With_Levelling">Figure&nbsp;1 (f)</a> works only in theory since with the additional 3 links it is not possible to position all the links in space so as to have no link impeded by any other link during the rotation of the cranks. The following is the description of a cam profile for use in achieving straight line motion (the cam has straight line motion supported by the legs). Either of two gaits can be achived. The first having continuous motion of the legs in which when one leg is in protraction the other is in retraction. The second gait has dwell periods when both of the legs are on the ground with none moving relative to the other.</p>
-<p>There are two radii: <span class="math inline">\(R_{AB}\)</span> as half the distance between the two legs and <span class="math inline">\(r_d\)</span> the dwell offset radius. <span class="math inline">\(r_d=r_fR\)</span> with <span class="math inline">\(r_f ∈ [0,1]\)</span>. The cam profile is a parametric curve (illustrated in <a href="#fig-parallelogram-cam">Figure&nbsp;2</a>) of: <span class="math display">\[x_{(t)}=t+(R_{AB}+r_d) Cos(\frac{t}{2 r_d}* Pi)\]</span> <span class="math display">\[y_{(t)}=(R_{AB}+r_d) Sin(\frac{t}{2 r_d}* Pi)\]</span></p>
+<p>There are two radii: <span class="math inline">\(R_{AB}\)</span> as half the distance between the two legs and <span class="math inline">\(r_d\)</span> the dwell offset radius. <span class="math inline">\(r_d=r_fR_{AB}\)</span> with <span class="math inline">\(r_f ∈ [0,1]\)</span>. The cam profile is a parametric curve (illustrated in <a href="#fig-parallelogram-cam">Figure&nbsp;2</a>) of: <span class="math display">\[x_{(t)}=t+(R_{AB}+r_d) Cos(\frac{t}{2 r_d}* Pi)\]</span> <span class="math display">\[y_{(t)}=(R_{AB}+r_d) Sin(\frac{t}{2 r_d}* Pi)\]</span></p>
 <div id="fig-parallelogram-cam" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./assets/images/Num_3CAM.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;2: Parallelogram mechanism straight line cam</figcaption><p></p>
 </figure>
 </div>
-<p>A simpler option for achieving straight line motion for a parallelogram is using the cam profile described in <a href="#sec-universal-linear-motion-wheel">Section&nbsp;6</a> which allows straight line motion by changing the mechanism’s gait from continuous walking to intermittent walking.</p>
+<p>A simpler option for achieving straight line motion for a parallelogram is using the cam profile described in <a href="#sec-universal-linear-motion-wheel">Section&nbsp;7</a> which allows straight line motion by changing the mechanism’s gait from continuous walking to intermittent walking.</p>
 <p>Either of two configurations is required to practically build a system with multiple legs driven by a single actuator and sharing the same cranks. The first configuration has been described having the fixed link (AD) in the midplane between the plane having coupler BC and coupler FE. This first configuration works for a system with two legs.</p>
 </section>
 <section id="sec-recirculating-legs-2" class="level3">
 <h3 class="anchored" data-anchor-id="sec-recirculating-legs-2">The Second Configuration</h3>
-<p>To build a system with more than 2 legs requires that the two cranks (<span class="math inline">\(ABF\)</span> and <span class="math inline">\(CDE\)</span>) be placed in different planes on opposite sides of the couplers (<span class="math inline">\(CB\)</span> and <span class="math inline">\(EF\)</span>) which are in the midplane. The fixed link is joined to the two couplers from planes further away from the midplane. <a href="#fig-Leg">Figure&nbsp;3</a> illustrates this setup. This way it is possible for the legs to recirculate from the power stroke to the return stroke and back to the power stroke without being impeded by any other link.</p>
+<p>To build a system with more than 2 legs requires that the two cranks (<span class="math inline">\(BAF\)</span> and <span class="math inline">\(CDE\)</span>) be placed in different planes on opposite sides of the couplers (<span class="math inline">\(CB\)</span> and <span class="math inline">\(EF\)</span>) which are in the midplane. The fixed link is joined to the two couplers from planes further away from the midplane. <a href="#fig-Leg">Figure&nbsp;3</a> illustrates this setup. This way it is possible for the legs to recirculate from the power stroke to the return stroke and back to the power stroke without being impeded by any other link.</p>
 <div id="fig-Leg" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./assets/images/redacted.png" class="img-fluid figure-img"></p>
@@ -404,12 +405,12 @@ div.csl-indent {
 <p>The following condition must also be met for the legs to recirculate: <span class="math inline">\(L_{AD} &lt;= R_{AB}\)</span></p>
 <p>This setup achieves design aims 1, 6, 7, and 8. It is also possible with a few modifications to achieve aim 5. However, it fails to achieve aims 2, 3, and 4. With this set up the legs are recirculating and there is a point at which two legs are collinear. Since the couplers are all in the same plane, it follows that the lowest point of the upper coupler must be higher than the highest point of the lower coupler when they are collinear. For a crank length <span class="math inline">\(R_{AB}\)</span> and N couplers, the angle <span class="math inline">\(\theta_c\)</span> between any two couplers, if they are uniformly spaced, is <span class="math inline">\(\theta_c = 360/N\)</span>°. In the simplest case with coupler thickness <span class="math inline">\(T_c \to 0\)</span>, the maximum coupler height,</p>
 <p><span class="math display">\[H_c = 2R_{AB}Sin(\theta_C/2)\]</span></p>
-<p>The loci of the pin joints connecting the coupler to the two cranks are circular paths. However this setup can be used with any other desired path generated by any other mechanism or by cam grooves as long as the conditions for the positions of the paths, leg, and pin joints are met. The result is a walking mechanism with any number of legs all driven by a single motor with the foot tracing any arbitrary locus and fulfilling the design aims 1,6, 7 and 8. while modifying the path requires more complex mechanisms beyond the scope of this work unless flexible links and cam grooves (as described in <a href="#sec-flexible-links">Section&nbsp;5</a>) are are used or non circular wheels (given in <a href="#sec-universal-linear-motion-wheel">Section&nbsp;6</a>), it makes it easier to achieve the remaining design aims 2, 3, and 4.</p>
+<p>The loci of the pin joints connecting the coupler to the two cranks are circular paths. However this setup can be used with any other desired path generated by any other mechanism or by cam grooves as long as the conditions for the positions of the paths, leg, and pin joints are met. The result is a walking mechanism with any number of legs all driven by a single motor with the foot tracing any arbitrary locus and fulfilling the design aims 1,6, 7 and 8. while modifying the path requires more complex mechanisms beyond the scope of this work unless flexible links and cam grooves (as described in <a href="#sec-flexible-links">Section&nbsp;6</a>) are are used or non circular wheels (given in <a href="#sec-universal-linear-motion-wheel">Section&nbsp;7</a>), it makes it easier to achieve the remaining design aims 2, 3, and 4.</p>
 <p>Since the coupler height (or leg length) is limited by the crank length <span class="math inline">\(R_{AB}\)</span>, it follows that the maximum robot height that can be achieved using this set-up is practically limited by the crank length. And although the crank length can theoretically be increased without limit, this action worsens how much the synthesized mechanism misses design aim 3 making it much less practical. To overcome these limitations, the design of a hollow leg for use with the parallelogram linkage is described.</p>
 </section>
 <section id="sec-recirculating-legs-hollow" class="level3">
 <h3 class="anchored" data-anchor-id="sec-recirculating-legs-hollow">A Hollow Leg for a Recirculating Leg System</h3>
-<p>This design allows the use of longer legs that descibed in <a href="#sec-recirculating-legs-2">Section&nbsp;3.3</a> by allowing the upper legs to pass “within” the lower legs when any two legs become collinear. <a href="#fig-figure3.3">Figure&nbsp;4</a> shows the design of such a leg. The principle applied here is that which allows glasses or any other tubular structure to be stacked inside each other. For two hollow objects to be stacked inside each other if their shapes are symmetrical about the central vertical plane, it is required that the distance <span class="math inline">\(d_x(z)\)</span> between any two similar points on each side of the plane increase with height z. If the sole of the leg is flat, then this condition is not fulfilled at the sole and this increases the minimum height at which one leg can pass through another. In the simplest case where <span class="math inline">\(T_c \to 0\)</span>, the minimum height required for one leg to pass through another is found by solving the following equation. of any length while maintaining constant the height of vertical payload displacement. <span class="math display">\[d_x(z_0) = L_{sole}\]</span></p>
+<p>This design allows the use of longer legs than descibed in <a href="#sec-recirculating-legs-2">Section&nbsp;3.3</a> by allowing the upper legs to pass “within” the lower legs when any two legs become collinear. <a href="#fig-figure3.3">Figure&nbsp;4</a> shows the design of such a leg. The principle applied here is that which allows glasses or any other tubular structure to be stacked inside each other. For two hollow objects to be stacked inside each other if their shapes are symmetrical about the central vertical plane, it is required that the distance <span class="math inline">\(d_x(z)\)</span> between any two similar points on each side of the plane increase with height z. If the sole of the leg is flat, then this condition is not fulfilled at the sole and this increases the minimum height at which one leg can pass through another. In the simplest case where <span class="math inline">\(T_c \to 0\)</span>, the minimum height required for one leg to pass through another is found by solving the following equation. of any length while maintaining constant the height of vertical payload displacement. <span class="math display">\[d_x(z_0) = L_{sole}\]</span></p>
 <div id="fig-figure3.3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="./assets/images/redacted.png" class="img-fluid figure-img"></p>
@@ -418,10 +419,21 @@ div.csl-indent {
 </div>
 </section>
 </section>
+<section id="sec-parallelogram-using-flexible-links" class="level2">
+<h2 class="anchored" data-anchor-id="sec-parallelogram-using-flexible-links">Parallelogram Mechanism Using Flexible links</h2>
+<p>A parallelogram mechanism can also be designed using at least 3 fixed links and a flexible link (chain, belt or cable loop). Two of these links (DE and CF of <a href="#fig-Flexible-link-parallelogram-mechanism">Figure&nbsp;5</a>) form the couplers (or legs) while the third (AB) forms the crank. The chain is connected through sprockets fixed to similar points on the legs (points A and B). Motion is achieved through a connection of differential motors on opposite sides of the chain. Linear motion through a single stroke has the motors driven in opposite directions (of rotation) so that the carriage connected to the motors moves from one axle on one leg to the second axle on the other leg. This mechanism has intermittent motion (continuous linear motion with a dwell when the mechanism is transitioning between two similar strokes). The transition between two similar strokes is achieved by driving the 2 motors in the same direction (similar angular velocity).</p>
+<p>The parallelogram mechanism using flexible links requires 2 motors so that it fails to achieve design aim 1. However, it fulfils all the other design aims. Further, it is of an easier construction than the mechanisms of {<a href="#sec-universal-linear-motion-wheel">Section&nbsp;7</a>} requiring far less machining. If an electromagnetic gripping mechanism is used, then it also requires only two grippers per leg as opposed to the minimum of 4 which are required by the mechanisms of {<a href="#sec-universal-linear-motion-wheel">Section&nbsp;7</a>}. It also requires a simpler turning system for a walking robot than the mechanisms of {<a href="#sec-universal-linear-motion-wheel">Section&nbsp;7</a>}</p>
+<div id="fig-Flexible-link-parallelogram-mechanism" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="./assets/images/redacted.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;5: Flexible link parallelogram mechanism</figcaption><p></p>
+</figure>
+</div>
+</section>
 <section id="sec-rimless-wheel" class="level2">
 <h2 class="anchored" data-anchor-id="sec-rimless-wheel">Rimless Wheel with Constant Pressure Angle</h2>
 <p>The rimless wheel, as the name suggests, is a wheel without the rim and was first mentioned as a model of walking by Margaria <span class="citation" data-cites="Edwards1978">[<a href="#ref-Edwards1978" role="doc-biblioref">13</a>]</span>. For practical applications, the rimless wheel has several advantages. For instance, the stable region for a rimless wheel is very large <span class="citation" data-cites="Wisse2005">[<a href="#ref-Wisse2005" role="doc-biblioref">14</a>]</span>. However, this also introduces several challenges that limit its practical application. An example is that the step length is a function of the leg length (or robot height). <span class="citation" data-cites="Laney2005">[<a href="#ref-Laney2005" role="doc-biblioref">12</a>]</span> For rimless wheels with independently actuated spokes the ability of a robot to adjust its height, and thereby adjust its step length, allowing it to move in a manner best suited to fit the situation is an advantage. However, for a passive rimless wheel, the relationship between the robot height and the step length is a disadvantage as with the leg described in <a href="#sec-recirculating-legs">Section&nbsp;3</a> since it limits the practical maximum height of the robot. Further, the introduction of more degrees of freedom into a rimless wheel by the introduction of independently actuated spokes increases the complexity of control as well as the cost of the robot.</p>
-<p><a href="#fig-figure4.1">Figure&nbsp;5</a> illustrates a rimless wheel having a constant pressure angle. it achieves design aims 1, 6, 7, and 8 and fails on 3 and 4. It is possible with a few modifications to achieve aim 5. Design aim 2 (straight line motion) can also be achieved by the use of a cam groove on the wheel (described in <a href="#sec-universal-linear-motion-wheel">Section&nbsp;6</a>). This mechanism is synthesized using the leg described in <a href="#sec-recirculating-legs">Section&nbsp;3</a>. For a given crank length <span class="math inline">\(R_{AB}\)</span>, the amplitude of the arc traced by the axle remains constant and independent of the leg length. The step length is also constant. Theoretically then the robot’s height is not limited by the leg length. <a href="#fig-rimlesswheelequivalent">Figure&nbsp;5 (c)</a> shows a kinematic equivalent of this mechanism using a normal rimless wheel. Kinematic analysis of this wheel is beyond the scope this this work.</p>
+<p><a href="#fig-figure4.1">Figure&nbsp;6</a> illustrates a rimless wheel having a constant pressure angle. it achieves design aims 1, 6, 7, and 8 and fails on 3 and 4. It is possible with a few modifications to achieve aim 5. Design aim 2 (straight line motion) can also be achieved by the use of a cam groove on the wheel (described in <a href="#sec-universal-linear-motion-wheel">Section&nbsp;7</a>). This mechanism is synthesized using the leg described in <a href="#sec-recirculating-legs">Section&nbsp;3</a>. For a given crank length <span class="math inline">\(R_{AB}\)</span>, the amplitude of the arc traced by the axle remains constant and independent of the leg length. The step length is also constant. Theoretically then the robot’s height is not limited by the leg length. <a href="#fig-rimlesswheelequivalent">Figure&nbsp;6 (c)</a> shows a kinematic equivalent of this mechanism using a normal rimless wheel. Kinematic analysis of this wheel is beyond the scope this this work.</p>
 <div id="fig-figure4.1" class="quarto-layout-panel" data-nrow="2">
 <figure class="figure">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -450,13 +462,13 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5: Class 2 Rimless Wheel</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6: Class 2 Rimless Wheel</figcaption><p></p>
 </figure>
 </div>
 </section>
 <section id="sec-flexible-links" class="level2">
 <h2 class="anchored" data-anchor-id="sec-flexible-links">Flexible Links and Cam Grooves</h2>
-<p>Using flexible links there is no limit to the number of mechanism that can be synthesized. As such the work of this section is limited to describing the work of the flexible links. The two configurations described in <a href="#sec-recirculating-legs">Section&nbsp;3</a> are also used here. <a href="#fig-Flexible-Link-Concept">Figure&nbsp;6 (a)</a> illustrates a concept for a class 1 legged LLM using a chain. The legs are connected to the chains. <a href="#fig-Flexible-Link-Implementation-1">Figure&nbsp;6 (b)</a> and <a href="#fig-Flexible-Link-Implementation-2-a">Figure&nbsp;6 (c)</a> are practical implementations of the concept.</p>
+<p>Using flexible links there is no limit to the number of mechanism that can be synthesized. As such the work of this section is limited to describing the work of the flexible links. The two configurations described in <a href="#sec-recirculating-legs">Section&nbsp;3</a> are also used here. <a href="#fig-Flexible-Link-Concept">Figure&nbsp;7 (a)</a> illustrates a concept for a class 1 legged LLM using a chain. The legs are connected to the chains. <a href="#fig-Flexible-Link-Implementation-1">Figure&nbsp;7 (b)</a> and <a href="#fig-Flexible-Link-Implementation-2-a">Figure&nbsp;7 (c)</a> are practical implementations of the concept.</p>
 <div id="fig-figure6.1" class="quarto-layout-panel">
 <figure class="figure">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -495,10 +507,10 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;6: Class One LLM using Flexible Links</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7: Class One LLM using Flexible Links</figcaption><p></p>
 </figure>
 </div>
-<p>The design of <a href="#fig-Flexible-Link-Implementation-2-a">Figure&nbsp;6 (c)</a> has the advantage that it has grooves which completely elimites slip in the x direction. The grooves are formed by arcs with an empirical center angle of 22.5° with a radius of R both obtained using the foot path given in <a href="#fig-Class-1-Mechanism-Path">Figure&nbsp;6 (d)</a>. The radius of the sprocket at the lower corners is also R. The length of the leg measured from the center of the sprocket axle must be <span class="math inline">\(2R\)</span> for the legs to mate with the grooves.</p>
+<p>The design of <a href="#fig-Flexible-Link-Implementation-2-a">Figure&nbsp;7 (c)</a> has the advantage that it has grooves which completely elimites slip in the x direction. The grooves are formed by arcs with an empirical center angle of 22.5° with a radius of R both obtained using the foot path given in <a href="#fig-Class-1-Mechanism-Path">Figure&nbsp;7 (d)</a>. The radius of the sprocket at the lower corners is also R. The length of the leg measured from the center of the sprocket axle must be <span class="math inline">\(2R\)</span> for the legs to mate with the grooves.</p>
 <p>The legs of this mechanism slide inside the grooves of the rail making it require a lot of lubrication. Further, for legged class 1 compound LLMs the legs can only establish point of line contact with a flat ground and it is not possible to use grooved rails with legs longer than <span class="math inline">\(2R\)</span>. Class 2 mechanisms offer advantages over this class of mechanisms.</p>
 <div id="fig-figure6.2" class="quarto-layout-panel">
 <figure class="figure">
@@ -520,21 +532,21 @@ div.csl-indent {
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;7: Class Two LLM using Flexible Links</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;8: Class Two LLM using Flexible Links</figcaption><p></p>
 </figure>
 </div>
-<p>Class two LLMs using flexible links are designed using legs as described in <a href="#sec-recirculating-legs">Section&nbsp;3</a>. <a href="#fig-figure6.2">Figure&nbsp;7</a> illustrates this mechanism.</p>
+<p>Class two LLMs using flexible links are designed using legs as described in <a href="#sec-recirculating-legs">Section&nbsp;3</a>. <a href="#fig-figure6.2">Figure&nbsp;8</a> illustrates this mechanism.</p>
 </section>
 <section id="sec-universal-linear-motion-wheel" class="level2">
 <h2 class="anchored" data-anchor-id="sec-universal-linear-motion-wheel">Universal Linear Motion Wheel</h2>
-<p>The following is a description of a mechanism that meets all the design aims and is used by both the mechanisms described in <a href="#sec-recirculating-legs">Section&nbsp;3</a> and <a href="#sec-rimless-wheel">Section&nbsp;4</a> to achieve straight line motion and is therefore the mechanism of greatest import and interest. It is based on the design of a wheel modified to have intermittent motion.</p>
+<p>The following is a description of a mechanism that meets all the design aims and is used by both the mechanisms described in <a href="#sec-recirculating-legs">Section&nbsp;3</a> and <a href="#sec-rimless-wheel">Section&nbsp;5</a> to achieve straight line motion and is therefore the mechanism of greatest import and interest. It is based on the design of a wheel modified to have intermittent motion.</p>
 <p>A wheel has the advantage of straight line motion, higher speed and greater stability on relatively flat ground. A design has been implemented of a bycycle with a wheel split into several parts <span class="citation" data-cites="conradie_2022">[<a href="#ref-conradie_2022" role="doc-biblioref">15</a>]</span>. By rotating all the different parts together they contact the ground at different periods and act together as a single wheel. However, there is still theoretically a line contact between the compound wheel and the ground at any instant and therefore no advantage over a normal wheel in terms of tractions. The use of tracks distributes weight evenly over a larger surface area, providing better traction on soft or uneven surfaces.</p>
 <p>DESCRIPTION REDACTED. Contact author for full access.</p>
 </section>
 <section id="sec-Conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="sec-Conclusion">Conclusion and Future Work</h2>
-<p>This paper presents four novel types of compound linear motion mechanisms for increasing the range of linear motion for use in the design of affordable fixed and mobile robots. Mobile robots are treated as 2 DOF linear motion mechanisms moving on flat ground. Mechanism 4 meets all the design aims, offers the greatest mechanical simplicity and is used by both mechanisms 1 and 2. It is therefore the mechanism of greatest interest. Mechanism 3 does no meet design aim 8. Mechanism 4 only achieves intermitted motion when used as a walking mechanism which mechanism 3 has continuous motion. However, it is easier and simpler to build robots that turn without slip using mechanism 4 than mechanism 3. For constrained LLM, rope climbing and cable robots, mechanism 4 offers a better alternative than mechanism 3 due to its larger surface area for clamping.</p>
-<p>Future work will focus on exploring the performance of built prototypes of mechanism 4 against existing types of LLMs, especially the stiffness provided by the clamping mechanisms as well as the precision of the unconstrained mechanism. The performance of mobile robots built using these mechanisms in both structured and unstructured environments will also be studied.</p>
+<p>This paper presents five novel types of compound linear motion mechanisms for increasing the range of linear motion for use in the design of affordable fixed and mobile robots. Mobile robots are treated as 2 DOF linear motion mechanisms moving on flat ground. The universal linear motion wheel (<a href="#sec-universal-linear-motion-wheel">Section&nbsp;7</a>) meets all the design aims, offers great mechanical simplicity and is used by both the parallelogram mechanism (<a href="#sec-parallelogram-straight-line-motion">Section&nbsp;3.2</a>) and the rimless wheel mechanism (<a href="#sec-rimless-wheel">Section&nbsp;5</a>). The flexible links and cam grove mechanism (<a href="#sec-flexible-links">Section&nbsp;6</a>) does not meet design aim 8. The universal linear motion wheel only achieves intermittent motion when used as a walking mechanism while the flexible links and cam grove mechanism has continuous motion. However, it is easier and simpler to build robots that turn without slip using the universal linear motion wheel than the flexible links and cam grove mechanism. For constrained LLM, rope climbing and cable robots, the universal linear motion wheel offers a better alternative than the flexible links and cam grove mechanism due to its larger surface area for clamping. The parallelogram mechanism with flexible links (<a href="#sec-parallelogram-using-flexible-links">Section&nbsp;4</a>) meets all the design aims except aim 1. It has the greatest mechanical simplicity including the simplest requirements for an electromechanical gripping system. It is therefore the mechanism of greatest interest.</p>
+<p>Future work will focus on exploring the performance of built prototypes of the universal linear motion wheel against existing types of LLMs, especially the stiffness provided by the clamping mechanisms as well as the precision of the unconstrained mechanism. The performance of mobile robots built using these mechanisms in both structured and unstructured environments will also be studied.</p>
 
 
 
