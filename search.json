@@ -2,9 +2,30 @@
   {
     "objectID": "ulmwmechanisms.html",
     "href": "ulmwmechanisms.html",
-    "title": "Universal Linear Motion Wheel Mechanisms",
+    "title": "Universal Linear Motion Wheel Mechanisms (Draft)",
     "section": "",
-    "text": "DESCRIPTION REDACTED. Contact author for full access."
+    "text": "A universal linear motion wheel(ULMW) is a type of mechanism used to create compound linear motion mechanisms to enable long range linear motion. Practical ULMWs can be classified according to: 1. Type of motion 2. Number of links 3. Number of Degrees of Freedom 4. Type of locomotion scheme\n\n\n\nContinuous motion\nIntermittent motion\n\n\n\n\n\n5 Bar ULMW\n6 Bar ULMW\n\n\n\n\n\n1 DoF\n2 DoF\n\n\n\n\n\nWheeled\nLegged\n\nTechnically wheeled ULMWs can be converted to legged ULMWs by adding legs to them.\nSeveral other types of ULMW mechanisms can be built."
+  },
+  {
+    "objectID": "ulmwmechanisms.html#bar-ulmws",
+    "href": "ulmwmechanisms.html#bar-ulmws",
+    "title": "Universal Linear Motion Wheel Mechanisms (Draft)",
+    "section": "5 Bar ULMWs",
+    "text": "5 Bar ULMWs"
+  },
+  {
+    "objectID": "ulmwmechanisms.html#bar-ulmws-1",
+    "href": "ulmwmechanisms.html#bar-ulmws-1",
+    "title": "Universal Linear Motion Wheel Mechanisms (Draft)",
+    "section": "6 Bar ULMWs",
+    "text": "6 Bar ULMWs"
+  },
+  {
+    "objectID": "ulmwmechanisms.html#continuous-motion-legged-ulmw",
+    "href": "ulmwmechanisms.html#continuous-motion-legged-ulmw",
+    "title": "Universal Linear Motion Wheel Mechanisms (Draft)",
+    "section": "Continuous Motion Legged ULMW",
+    "text": "Continuous Motion Legged ULMW"
   },
   {
     "objectID": "index.html",
